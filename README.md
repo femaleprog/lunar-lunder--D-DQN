@@ -34,9 +34,6 @@ The target Q-network is periodically synchronized or "soft" updated to track cha
 ### Balancing Stability and Exploration
 Maintaining two networks creates a trade-off between stability and exploration. The target network provides a stable reference, while the current network explores and learns. Using only the current network might lead to faster learning but could result in overestimation bias and training instability.
 
-![Figure 3]((https://www.dropbox.com/scl/fi/a8exs6pa8z39q96deioon/atari-games.jpg?rlkey=yvx7xdung7l2gcv1j0ivdvool&dl=0))
-
-**Figure 3**: The top and middle rows show value estimates by DQN (orange) and Double DQN (blue) on six Atari games, highlighting the stability and performance improvements achieved by Double DQN.
 
 ## Conclusion
 Double Deep Q-Learning is a valuable improvement over traditional DQN, as it addresses overestimation bias and enhances training stability. By using two separate neural networks and periodic target network updates, DDQN strikes a balance between stability and exploration, resulting in more reliable Q-value estimates and better learning performance.
